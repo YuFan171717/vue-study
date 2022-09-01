@@ -11,7 +11,9 @@
 // query:{} 保存通过query传参的参数
 // path  当前路由的路径
 export default {
-  created() {},
+  created() {
+    console.log(this.$route.query.musicname)
+  },
 }
 </script>
 
