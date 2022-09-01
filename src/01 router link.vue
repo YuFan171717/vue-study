@@ -1,9 +1,7 @@
 <template>
   <div>
     <div class="footer_wrap">
-      <router-link to="/find?musicname=恋爱循环&singer=花泽香菜">
-        发现音乐
-      </router-link>
+      <router-link to="/find">发现音乐</router-link>
       <router-link to="/music">我的音乐</router-link>
       <router-link to="/friends">朋友</router-link>
     </div>
@@ -14,19 +12,20 @@
 </template>
 
 <script>
+//配置vue-router  在mian.js
+//告诉vue-router 渲染在哪里\\
+// -<router-view></router-view>
+
+// 内置组件
+//  - component，keep-alive，slot,router-view
+
+// 内置组件
+// <router-link></router-link>  在a标签的基础上添加了很多功能的a标签
+
 // 跟a标签的不同之处
 //  - a标签是通过href属性跳转的
 //  - <router-link></router-link> 是通过to属性进行跳转的 不需要加#
 //    点击routerlink时候添加了两个类名，router-link-exact-active   router-link-active
-
-//<router-link></router-link>可以路由传参
-
-//路由传参
-//query (查询参数传参)
-//params  传参
-
-//query传参
-//字符串的形式，直接以查询参数拼接路径
 export default {}
 </script>
 
